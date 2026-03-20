@@ -1,0 +1,19 @@
+# 1. 忽略 CMake 编译产生的中间垃圾
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# 2. 忽略 C++ 编译出的可执行程序
+trt_app
+
+# 3. 忽略极大的二进制引擎和模型文件
+*.engine
+*.onnx
+
+# 4. 忽略测试视频
+*.mp4
+*.avi
+
+# 5. 忽略 Linux 段错误产生的核心转储文件 (案发现场遗留物)
+core.*
